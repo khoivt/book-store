@@ -1,0 +1,22 @@
+.module {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .header, .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 16px 24px;
+
+    .submitBtn {
+        display: flex;
+        justify-content: center;
+    }
+  }
+}
