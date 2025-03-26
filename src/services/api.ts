@@ -28,3 +28,14 @@ export const fetchAccountAPI = () => {
     },
   });
 };
+
+export const logoutAPI = () => {
+  const urlBackend = "/api/v1/auth/logout";
+  return axios.post<IBackendRes<any>>(urlBackend);
+};
+
+
+export const getUsersAPI = (query: string) => {
+  const urlBackend = `/api/v1/user?${query}`;
+  return axios.get<IBackendRes<IModelPaginate<IUserTable>>>(urlBackend);
+};
